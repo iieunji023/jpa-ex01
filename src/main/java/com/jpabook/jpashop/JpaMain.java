@@ -2,6 +2,7 @@ package com.jpabook.jpashop;
 
 import com.jpabook.jpashop.domain.Member;
 import com.jpabook.jpashop.domain.Order;
+import com.jpabook.jpashop.domain.OrderItem;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
@@ -18,13 +19,14 @@ public class JpaMain {
         tx.begin();
 
         try{
-            Order order = em.find(Order.class, 1L);
-//            Long memberId = order.getMemberId();
-//
-//            Member member = em.find(Member.class, memberId);
+            Order order = new Order();
+//            order.addOrderItem(new OrderItem());
+            em.persist(order);
 
-            Member member = order.getMember();
-            member.getName();
+            OrderItem orderItem = new OrderItem();
+            orderItem.setOrder(order);
+
+            em.persist(orderItem);
 
             tx.commit();
         }catch (Exception e){

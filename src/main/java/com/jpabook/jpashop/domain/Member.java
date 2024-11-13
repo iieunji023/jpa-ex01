@@ -2,6 +2,9 @@ package com.jpabook.jpashop.domain;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 public class Member {
     @Id @GeneratedValue
@@ -15,6 +18,9 @@ public class Member {
     private String street;
 
     private String zipcode;
+
+    @OneToMany(mappedBy = "member") // mappedBy를 통해 연관관계 주인 지정
+    private List<Order> orders = new ArrayList<>(); // 관례상 new ArrayList<>(); 많이 씀
 
     public Long getId() {
         return id;
