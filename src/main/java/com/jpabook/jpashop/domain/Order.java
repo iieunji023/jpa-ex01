@@ -14,12 +14,17 @@ public class Order {
     private Long id;
 
     @ManyToOne  // Order가 N, member가 1
+    @JoinColumn(name = "MEMBER_ID")
     private Member member;
 
-    private LocalDateTime orderDate;
+    @OneToOne
+    @JoinColumn(name = "DELIVERY_ID")
+    private Delivery delivery;
 
     @OneToMany(mappedBy = "order")
     private List<OrderItem> orderItems = new ArrayList<>();
+
+    private LocalDateTime orderDate;
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status;

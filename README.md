@@ -49,3 +49,22 @@
 - 참조를 사용하도록 변경
 
 <img src="https://github.com/iieunji023/jpa-ex01/blob/main/images/객체구조.png" width="300">
+
+## [실전 예제 3 - 다양한 연관관계 매핑](https://github.com/iieunji023/jpa-ex01/blob/main/ex03.md)
+
+### 배송, 카테고리 추가
+
+> 엔티티
+
+- 주문과 배송은 1:1(@OneToOne)
+- 상품과 카테고리는 N:M(@ManyToMany)
+
+<img src="https://github.com/iieunji023/jpa-ex01/blob/main/images/ex03_엔티티.png" width="300">
+
+> ERD
+
+<img src="https://github.com/iieunji023/jpa-ex01/blob/main/images/ex03_erd.png" width="300">
+
+> 엔티티 상세
+
+<img src="https://github.com/iieunji023/jpa-ex01/blob/main/images/ex03_엔티티_상세.png" width="300">
