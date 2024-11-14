@@ -68,3 +68,16 @@
 > 엔티티 상세
 
 <img src="https://github.com/iieunji023/jpa-ex01/blob/main/images/ex03_엔티티_상세.png" width="300">
+
+## [실전 예제 4 - 상속관계 매핑](https://github.com/iieunji023/jpa-ex01/blob/main/ex04.md)
+
+### 요구사항 추가
+
+- 상품의 종류는 음반, 도서, 영화가 있고 이후 더 확장될 수 있다.
+- 모든 데이터는 등록일과 수정일이 필수다.
+
+<img src="https://github.com/iieunji023/jpa-ex01/blob/main/images/ex04_도메인모델.png" width="300">
+
+<img src="https://github.com/iieunji023/jpa-ex01/blob/main/images/ex04_도메인모델_상세.png" width="300">
+
+<img src="https://github.com/iieunji023/jpa-ex01/blob/main/images/ex04_테이블.png" width="300">
