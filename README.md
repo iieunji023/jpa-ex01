@@ -83,3 +83,6 @@
 <img src="https://github.com/iieunji023/jpa-ex01/blob/main/images/ex04_테이블.png" width="300">
 
 ## [실전 예제 5 - 연관관계 관리](https://github.com/iieunji023/jpa-ex01/blob/main/ex05.md)
+
+## [실전 예제 6. 값 타입 매핑](https://github.com/iieunji023/jpa-ex01/blob/main/ex06.md)
+<img src="https://github.com/iieunji023/jpa-ex01/blob/main/images/ex06_엔티티.png" width="300">
